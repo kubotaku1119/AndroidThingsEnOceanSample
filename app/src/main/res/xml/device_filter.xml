@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<!--<usb-device vendor-id="1027" product-id="24577" /> &lt;!&ndash; FT232RL &ndash;&gt;-->
+	<usb-device vendor-id="1027" product-id="24596" /> <!-- FT232H -->
+	<!--<usb-device vendor-id="1027" product-id="24592" /> &lt;!&ndash; FT2232C/D/HL &ndash;&gt;-->
+</resources>

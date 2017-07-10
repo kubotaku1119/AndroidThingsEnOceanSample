@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.0"
+    defaultConfig {
+        applicationId "com.nissha.android.things.sample"
+        minSdkVersion 24
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // USB操作に必要なFTDI提供のjar
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // Android Things
+    provided 'com.google.android.things:androidthings:0.4.1-devpreview'
+    // HelloCharts
+    compile 'com.github.lecho:hellocharts-library:1.5.5@aar'
+    compile 'com.android.support:support-v4:25.3.0'
+}
